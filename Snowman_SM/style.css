@@ -1,0 +1,220 @@
+
+/**Stephen Mazzeo | 1/12/24**/
+/**Background Color**/
+body {
+    background-color: rgba(44, 196, 247, 0.712);
+    background-image: url("https://img1.picmix.com/output/stamp/normal/0/5/8/2/1112850_c341b.gif");
+}
+
+/**Basic Snow Color & Shadows**/
+.shape {
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: -4px -6px 6px rgba(210, 225, 252, 0.8) inset;
+}
+
+/**Eyes**/
+.eyefr {
+    background-color: black;
+    border-radius: 50%;
+}
+
+/**Arms**/
+.twig {
+background-color: rgb(165, 91, 42);
+}
+
+/**The Body In Order**/
+.head {
+    z-index: -1;
+    width: 250px;
+    height: 250px;
+    bottom: 650px;
+    left: 50px;
+    position: relative;
+}
+
+.body {
+    z-index: -2;
+    width: 300px;
+    height: 300px;
+    left: 35px;
+    bottom: 150px;
+    position: relative;
+}
+
+.legs {
+    z-index: -3;
+    width: 400px;
+    height: 400px;
+    top: 500px;
+    position: relative;
+}
+
+/**Animation**/
+@keyframes waving {
+    from {
+        rotate: -250deg;
+        margin-left: 260px;
+        margin-top: -680px;
+    }
+    to {
+        rotate: -210deg;
+        margin-left: 279px;
+        margin-top: -680px;
+    }
+  }
+
+  
+
+/**Accessories**/
+.nose {
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-left: 75px solid orange;
+    border-right: 25px solid transparent;
+    position: absolute;
+    margin-top: -770px;
+    margin-left: 180px
+}
+
+.eye {
+    width: 25px;
+    height: 25px;
+    margin-top: -800px;
+    margin-left: 115px;
+    position: absolute;
+}
+
+.eye2 {
+    width: 25px;
+    height: 25px;
+    margin-top: -800px;
+    margin-left: 225px;
+    position: absolute;
+}
+
+.arm {
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    animation-name: waving;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.arm2 {
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    margin-top: -550px;
+    margin-left: -170px;
+    rotate: -30deg;
+}
+
+.scarf {
+    z-index: 1;
+    background-color: rgb(255, 71, 61);
+    height: 2.5rem;
+    width: 14.5rem;
+    box-shadow: -4px -6px 4px rgba(180, 31, 24, 0.7) inset;
+    border-radius: 5rem 5rem 0 0;  
+    margin-top: -430px;
+    margin-left: 69px;
+    position: absolute;
+}
+
+.scarf2 {
+    z-index: 1;
+    background-color: rgb(255, 71, 61);
+    width: 54px;
+    box-shadow: -4px -9px 4px rgba(180, 31, 24, 0.7) inset;
+    height: 200px;
+    border-radius: 30px;
+    margin-top: -420px;
+    margin-left:247px;
+    position: absolute;
+}
+
+.b1 {
+    width: 25px;
+    height: 25px;
+    margin-top: -610px;
+    margin-left: 170px;
+    position: absolute;
+}
+
+.b2 {
+    width: 25px;
+    height: 25px;
+    margin-top: -535px;
+    margin-left: 170px;
+    position: absolute;
+}
+
+.b3 {
+    width: 25px;
+    height: 25px;
+    margin-top: -460px;
+    margin-left: 170px;
+    position: absolute;
+}
+
+.hat {
+    z-index: 5;
+    margin-top: -880px;
+    position: absolute;
+    margin-left: 80px;
+    rotate: 20deg;
+    border-bottom: 50px solid black;
+    border-left: 63px solid transparent;
+    border-right: 63px solid transparent;
+    width: 125px;
+}
+
+.hat2 {
+    z-index: 4;
+    rotate: 20deg;
+    background-color: rgb(255, 71, 61);
+    box-shadow: -5px 2px 4px rgb(165, 0, 0, 0.7) inset;
+    width: 128px;
+    height: 25px;
+    position: absolute;
+    margin-top: -892px;
+    margin-left: 151px; 
+}
+
+
+.hat3 {
+    z-index: -1;
+    margin-top: -1035px;
+    margin-left: 120px;
+    rotate: 200deg;
+    position: absolute;
+    border-bottom: 150px solid black;
+    border-left: 60px solid transparent;
+    border-right: 63px solid transparent;
+    width: 125px;
+}
+
+/**MISC**/
+
+.ground {
+    background-color: rgb(0, 131, 39);
+    width: 5000px;
+    height: 250px;
+    margin-top: -25px;
+    margin-left: -20px;
+    position: absolute;
+}
+
+.snow {
+    background-color: white;
+    width: 5000px;
+    height: 25px;  box-shadow: -4px -6px 6px rgba(210, 225, 252, 0.8) inset;
+    margin-top: -50px;
+    margin-left: -20px;
+    margin-top: absolute;
+}
